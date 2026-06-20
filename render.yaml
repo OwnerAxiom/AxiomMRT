@@ -4,7 +4,7 @@ services:
     name: AxiomMRT
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+    startCommand: python Axiom.py
     repo: https://github.com/OwnerAxiom/AxiomMRT
     branch: master
     autoDeploy: false
