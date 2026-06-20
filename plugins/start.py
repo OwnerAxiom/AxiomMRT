@@ -2,31 +2,31 @@ import os
 import sys
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.enums import ButtonStyle
+# from pyrogram.enums import ButtonStyle
 
 from info import Config, Txt
 
-def axiombtn():
-    return random.choice([
-        ButtonStyle.SUCCESS,
-        ButtonStyle.DANGER,
-        ButtonStyle.PRIMARY
-    ])
+# def axiombtn():
+#     return random.choice([
+#         ButtonStyle.SUCCESS,
+#         ButtonStyle.DANGER,
+#         ButtonStyle.PRIMARY
+#     ])
 
 @Client.on_message(filters.private & filters.command('start'))
 async def handle_start(bot:Client, message:Message):
 
     Btn = [
         [
-            InlineKeyboardButton(text='𝐇єʟᴘ 𝐀ηᴅ 𝐂σϻϻᴧηᴅ', callback_data='help', style=axiombtn())
+            InlineKeyboardButton(text='𝐇єʟᴘ 𝐀ηᴅ 𝐂σϻϻᴧηᴅ', callback_data='help')
         ],
         [
-            InlineKeyboardButton(text='⌯ 𝐀xɪσϻ ⌯', url='https://t.me/CreativeAxiom', style=ButtonStyle.SUCCESS),
+            InlineKeyboardButton(text='⌯ 𝐀xɪσϻ ⌯', url='https://t.me/CreativeAxiom'),
             InlineKeyboardButton(text='𝐒‌єꝛᴠєꝛ 𝐒‌ᴛᴧᴛs', callback_data='server', style=axiombtn())
         ],
         [
-            InlineKeyboardButton(text='𝐀xɪσϻ 𝐔ᴘᴅᴧᴛєs ⎘', url='https://t.me/AxiomBots', style=axiombtn()),
-            InlineKeyboardButton(text='𝐀‌ʙσυᴛ', callback_data='about', style=axiombtn())
+            InlineKeyboardButton(text='𝐀xɪσϻ 𝐔ᴘᴅᴧᴛєs ⎘', url='https://t.me/AxiomBots'),
+            InlineKeyboardButton(text='𝐀‌ʙσυᴛ', callback_data='about')
         ]
     ]
 
