@@ -22,7 +22,7 @@ async def handle_start(bot:Client, message:Message):
         ],
         [
             InlineKeyboardButton(text='⌯ 𝐀xɪσϻ ⌯', url='https://t.me/CreativeAxiom'),
-            InlineKeyboardButton(text='𝐒‌єꝛᴠєꝛ 𝐒‌ᴛᴧᴛs', callback_data='server', style=axiombtn())
+            InlineKeyboardButton(text='𝐒‌єꝛᴠєꝛ 𝐒‌ᴛᴧᴛs', callback_data='server')
         ],
         [
             InlineKeyboardButton(text='𝐀xɪσϻ 𝐔ᴘᴅᴧᴛєs ⎘', url='https://t.me/AxiomBots'),
