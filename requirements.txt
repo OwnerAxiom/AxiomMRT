@@ -1,11 +1,10 @@
-pyrogram
-TgCrypto
+pyrogram==2.0.106
+tgcrypto
 ujson
-Pyromod
+pyromod==3.1.6
 aiohttp
 pytz
 psutil
 kurigram
 pyrofork
-tgcrypto
 pyrotgfork
