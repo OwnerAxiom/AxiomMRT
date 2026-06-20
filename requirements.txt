@@ -1,0 +1,11 @@
+pyrogram
+TgCrypto
+ujson
+Pyromod
+aiohttp
+pytz
+psutil
+kurigram
+pyrofork
+tgcrypto
+pyrotgfork
