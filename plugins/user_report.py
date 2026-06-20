@@ -94,7 +94,7 @@ async def CHOICE_OPTION(bot, msg, number):
     await msg.reply_text(text=f"𝐁‌σᴛ 𝐒‌υᴄᴄєssғυʟʟʏ 𝐑‌єᴘσꝛᴛєᴅ 𝐓‌σ @{config['Target']} ✅\n\n➜ {no_of_reports.text} 𝐓‌ɪϻєs")
     file = open('report.txt', 'a')
     file.write(
-        f"\n\n@{config['Target']}𝐂‌ʜᴧηηєʟ σꝛ 𝐆‌ꝛσυᴘ ɪs 𝐑‌єᴘσꝛᴛєᴅ {no_of_reports.text} 𝐓‌ɪϻєs ✅")
+        f"\n\n@{config['Target']} 𝐂‌ʜᴧηηєʟ σꝛ 𝐆‌ꝛσυᴘ ɪs 𝐑‌єᴘσꝛᴛєᴅ {no_of_reports.text} 𝐓‌ɪϻєs ✅")
     file.close()
     await bot.send_document(chat_id=msg.chat.id, document='report.txt', reply_to_message_id=msg.id)
     os.remove('report.txt')
